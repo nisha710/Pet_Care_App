@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpFragment"
+    android:background="@drawable/about_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help and Support"
+            android:textSize="55sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Pet Shop and Care App! If you need assistance or have questions related to our application, you'll find helpful information below."
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Purchasing:"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue1"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse and Select Pets: Explore available pets for sale or adoption, view detailed pet information, and initiate purchases."
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Products Purchasing:"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue1"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Catalog: Browse our catalog of pet accessories and food products, view product details, and add items to your shopping cart."
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Shopping: Discover how to make online purchases, update your cart, and check out securely."
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Care Services:"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue1"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services Catalog: Browse our catalog of pet services, view service description, and purchase the service you want."
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safety Measures: Learn about the safety measures implemented by service providers to ensure your pet's well-being during their stay."
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

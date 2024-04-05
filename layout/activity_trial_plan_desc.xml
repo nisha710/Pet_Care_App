@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/petbackground"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+   >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        tools:context=".trialPlanDescActivity">
+
+        <TextView
+            android:id="@+id/trialplantitle"
+            android:layout_width="230dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="64dp"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="Trial Plan"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/trialplanduration"
+            android:layout_width="213dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            android:text="Duration : 1 day"
+            android:textColor="#673AB7"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.383"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trialplantype"
+            app:layout_goneMarginTop="50dp" />
+
+        <TextView
+            android:id="@+id/trialplancost"
+            android:layout_width="230dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:text="Cost : INR 1000"
+            android:textColor="#673AB7"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trialplanduration"
+            app:layout_goneMarginTop="20dp" />
+
+        <TextView
+            android:id="@+id/trialplantype"
+            android:layout_width="218dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="48dp"
+            android:text="Pet Type  : Cat/Dog"
+            android:textColor="#673AB7"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.385"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trialplantitle" />
+
+        <TextView
+            android:id="@+id/trialplanfood"
+            android:layout_width="286dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="12dp"
+            android:text="Feeding :Dry Food(1 time)\nWet Food(1 time)\nVeterinary Prescription diet(2 times)"
+            android:textColor="#673AB7"
+            android:textSize="24dp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trialplancost" />
+
+        <TextView
+            android:id="@+id/trialplanexercise"
+            android:layout_width="221dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:text="Exercise : Evening "
+            android:textColor="#673AB7"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trialplanfood"
+            app:layout_goneMarginTop="15dp" />
+
+        <Button
+            android:id="@+id/buyweekend"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/skyblue"
+            android:onClick="GoToMakePayments"
+            android:text="Buy Now"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.597"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trialplanexercise" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            tools:ignore="MissingConstraints">
+            <ImageButton
+                android:id="@+id/adoreme_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/round_arrow_back_24"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="19dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+

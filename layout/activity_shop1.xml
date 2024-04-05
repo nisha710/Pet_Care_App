@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop_Activity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+            <ImageButton
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/round_arrow_back_24"
+                android:background="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/viewcart"
+                android:layout_width="82dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="6dp"
+                android:background="@color/white"
+                android:src="@drawable/baseline_shopping_cart_24"
+                android:text="View Cart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Products"
+            android:textSize="35sp"
+            android:textColor="@color/service_title"
+            android:fontFamily="@font/goblin_one"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--card -1 -->
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shop_background_draw">
+                <ImageView
+                    android:id="@+id/cat3img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:padding="10dp"
+                    android:src="@drawable/cat1" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cat3img"
+                    android:layout_marginBottom="-29dp"
+                    android:fontFamily="@font/alegreya_sans_sc"
+                    android:text="Cat Food"
+                    android:textColor="@color/service_title"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"/>
+
+                <Button
+                    android:id="@+id/cat1btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/service_button"
+                    android:text="Add to Cart"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!--card - 2 -->
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/shop_background_draw">
+                <ImageView
+                    android:id="@+id/cat2img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:padding="10dp"
+                    android:src="@drawable/cat_food3" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cat2img"
+                    android:layout_marginBottom="-29dp"
+                    android:fontFamily="@font/alegreya_sans_sc"
+                    android:text="Cat Food"
+                    android:textColor="@color/service_title"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"/>
+
+                <Button
+                    android:id="@+id/cat2btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/service_button"
+                    android:text="Add to Cart"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--card - 3 -->
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shop_background_draw">
+                <ImageView
+                    android:id="@+id/dog1img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:padding="10dp"
+                    android:src="@drawable/dog1" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/dog1img"
+                    android:layout_marginBottom="-29dp"
+                    android:fontFamily="@font/alegreya_sans_sc"
+                    android:text="Dog Food"
+                    android:textColor="@color/service_title"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"/>
+
+                <Button
+                    android:id="@+id/dog1btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/service_button"
+                    android:text="Add to Cart"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!--card - 4 -->
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shop_background_draw">
+                <ImageView
+                    android:id="@+id/dog2img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:padding="10dp"
+                    android:src="@drawable/dog2" />
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/dog2img"
+                    android:layout_marginBottom="-29dp"
+                    android:fontFamily="@font/alegreya_sans_sc"
+                    android:text="Dog Food"
+                    android:textColor="@color/service_title"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"/>
+
+                <Button
+                    android:id="@+id/dog2btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/service_button"
+                    android:text="Add to Cart"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--card - 5 -->
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shop_background_draw">
+                <ImageView
+                    android:id="@+id/cat1img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:padding="10dp"
+                    android:src="@drawable/cat3" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cat1img"
+                    android:layout_marginBottom="-29dp"
+                    android:fontFamily="@font/alegreya_sans_sc"
+                    android:text="Cat Food"
+                    android:textColor="@color/service_title"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"/>
+
+                <Button
+                    android:id="@+id/cat3btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/service_button"
+                    android:text="Add to Cart"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!--card - 6 -->
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shop_background_draw">
+                <ImageView
+                    android:id="@+id/dogbelt"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:padding="10dp"
+                    android:src="@drawable/a1" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/dogbelt"
+                    android:layout_marginBottom="-29dp"
+                    android:fontFamily="@font/alegreya_sans_sc"
+                    android:text="Dog Belt"
+                    android:textColor="@color/service_title"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"/>
+
+                <Button
+                    android:id="@+id/dog3btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/service_button"
+                    android:text="Add to Cart"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

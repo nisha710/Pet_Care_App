@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/service_background"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+            <ImageButton
+                android:id="@+id/services_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/round_arrow_back_24"
+                android:backgroundTint="@color/white"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/service_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:fontFamily="@font/chonburi"
+            android:text="Services"
+            android:textColor="@color/service_title"
+            android:textSize="55dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/service_btn1"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:text="ADORE ME"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:backgroundTint="@color/service_button"/>
+        <Button
+            android:id="@+id/service_btn2"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="CARE"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/service_button"/>
+        <Button
+            android:id="@+id/service_btn3"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="SHOP"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/service_button"/>
+    </LinearLayout>
+
+</FrameLayout>

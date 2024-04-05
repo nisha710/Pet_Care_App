@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@android:color/white"
+    tools:context=".AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="280dp"
+            android:src="@drawable/aboutusimg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purfectly Yours"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue1"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="17dp"
+            android:paddingEnd="15dp"
+            android:text="Our mission is to connect pet lovers with high-quality care products and simplify pet adoption through our user-friendly app. Our journey began with a shared love for animals, and we're committed to making a positive impact on their lives. We provide a range of services and products designed to meet the unique needs of pets, all while promoting adoption as the best way to bring joy into your home."
+
+
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:background="@drawable/petbackground"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        tools:context=".CarePlansActivity">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/care_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:padding="15dp"
+                android:src="@drawable/round_arrow_back_24" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/imageView4"
+            android:layout_width="310dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/chonburi"
+            android:gravity="center"
+            android:text="Care"
+            android:textColor="@color/blue1"
+            android:textSize="70dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/trialplan"
+            android:layout_width="253dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/trial_plan"
+            android:onClick="GoToTrialPlan"
+            android:text="Trial Plan"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/basicplan"
+            android:layout_width="241dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/trial_plan"
+            android:onClick="GoToDailyCarePlan"
+            android:text="Basic Daily care"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trialplan" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/weekendplan"
+            android:layout_width="242dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/trial_plan"
+            android:onClick="GoToWeekendPlan"
+            android:text="Weekend Gateway"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/basicplan" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/vacationplan"
+            android:layout_width="256dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/trial_plan"
+            android:onClick="GoToVacationPlan"
+            android:text="Extended Vacation"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekendplan" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/medicalplan"
+            android:layout_width="259dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/trial_plan"
+            android:onClick="GoToMedicalPlan"
+            android:text="Medical Care Plan"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vacationplan" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dietplan"
+            android:layout_width="263dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/trial_plan"
+            android:onClick="GoToDietPlan"
+            android:text="Special Diet Plan"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicalplan" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

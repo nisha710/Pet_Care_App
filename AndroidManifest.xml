@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".MainAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MainModel"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateCart"
+            android:exported="false" />
+        <activity
+            android:name=".ViewCart"
+            android:exported="false" />
+        <activity
+            android:name=".Dog3"
+            android:exported="false" />
+        <activity
+            android:name=".Dog2"
+            android:exported="false" />
+        <activity
+            android:name=".Dog1"
+            android:exported="false" />
+        <activity
+            android:name=".Cat3"
+            android:exported="false" />
+        <activity
+            android:name=".Cat2"
+            android:exported="false" />
+        <activity
+            android:name=".Cat1"
+            android:exported="false" />
+        <activity
+            android:name=".Shop_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Adore_Me_activity" />
+        <activity android:name=".View1_activity" />
+        <activity android:name=".View2_activity" />
+        <activity android:name=".View3_activity" />
+        <activity android:name=".View4_activity" />
+        <activity android:name=".View5_activity" />
+        <activity android:name=".View6_activity" />
+        <activity android:name=".Services_activity" />
+        <activity android:name=".CarePlansActivity" />
+        <activity android:name=".DailyCareDescActivity" />
+        <activity android:name=".MedicalCareActivity" />
+        <activity android:name=".SpecialDietActivity" />
+        <activity android:name=".trialPlanDescActivity" />
+        <activity android:name=".VacationActivity" />
+        <activity android:name=".weekendGatewayActivity" />
+        <activity android:name=".SignUp_Activity" />
+        <activity android:name=".Login_Activity" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

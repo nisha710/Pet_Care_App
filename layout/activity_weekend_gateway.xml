@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/petbackground"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        tools:context=".weekendGatewayActivity">
+
+
+        <TextView
+            android:id="@+id/weekendtitle"
+            android:layout_width="217dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="72dp"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="Weekend Gateway Plan"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/weekendtype"
+            android:layout_width="216dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="12dp"
+            android:text="Pet Type : Cat/Dog/Fish"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekendtitle" />
+
+
+        <TextView
+            android:id="@+id/weekendduration"
+            android:layout_width="230dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:text="Duration : 2 days (Sat,Sun)"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekendtype" />
+
+        <TextView
+            android:id="@+id/weekendcost"
+            android:layout_width="225dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="8dp"
+            android:text="Cost : INR 4,000"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekendduration" />
+
+
+        <TextView
+            android:id="@+id/weekendfood"
+            android:layout_width="291dp"
+            android:layout_height="192dp"
+            android:layout_marginTop="12dp"
+            android:text="Feeding :Dry Food(1 time)\nWet Food(1 time)\nVeterinary Prescription diet(2 times) \nRaw Food(1 time)"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekendcost" />
+
+        <TextView
+            android:id="@+id/weekendexercise"
+            android:layout_width="289dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="8dp"
+            android:text="Exercise :Morning, Evening"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekendfood" />
+
+        <Button
+            android:id="@+id/buyweekend"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/skyblue"
+            android:onClick="GoToMakePayments"
+            android:text="Buy Now"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.597"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weekendexercise" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            tools:ignore="MissingConstraints">
+            <ImageButton
+                android:id="@+id/adoreme_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/round_arrow_back_24"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="19dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

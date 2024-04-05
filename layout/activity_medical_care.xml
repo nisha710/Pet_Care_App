@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/petbackground"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        tools:context=".MedicalCareActivity">
+
+        <TextView
+            android:id="@+id/medicaltitle"
+            android:layout_width="216dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="68dp"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="Medical Care Plan"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.446"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/medicaltype"
+            android:layout_width="234dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:text="Pet Type : Cat/Dog"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicaltitle" />
+
+        <TextView
+            android:id="@+id/medicalduration"
+            android:layout_width="215dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:text="Duration : 1 month "
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.417"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicaltype" />
+
+        <TextView
+            android:id="@+id/medicalcost"
+            android:layout_width="225dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="8dp"
+            android:text="Cost : INR 8,000"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicalduration" />
+
+
+        <TextView
+            android:id="@+id/medicalservice"
+            android:layout_width="281dp"
+            android:layout_height="159dp"
+            android:layout_marginTop="12dp"
+            android:text="Feeding :Veterinary Prescription Medicines and Food Providation \nConsultations and Advice from Vets"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.873"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicalcost" />
+
+        <Button
+            android:id="@+id/buyweekend"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/skyblue"
+            android:onClick="GoToMakePayments"
+            android:text="Buy Now"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.597"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicalservice" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            tools:ignore="MissingConstraints">
+            <ImageButton
+                android:id="@+id/adoreme_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/round_arrow_back_24"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="19dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/petbackground"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        tools:context=".VacationActivity">
+
+
+        <TextView
+            android:id="@+id/vacationtitle"
+            android:layout_width="217dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="88dp"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="Vacation Care Plan"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/vacationtype"
+            android:layout_width="223dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="12dp"
+            android:text="Pet Type : Cat/Dog/Fish"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vacationtitle" />
+
+        <TextView
+            android:id="@+id/vacationduration"
+            android:layout_width="227dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:text="Duration : 15 days"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.419"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vacationtype" />
+
+        <TextView
+            android:id="@+id/vacationcost"
+            android:layout_width="225dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="8dp"
+            android:text="Cost : INR 20,000"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.429"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vacationduration" />
+
+
+        <TextView
+            android:id="@+id/vacationfood"
+            android:layout_width="282dp"
+            android:layout_height="188dp"
+            android:layout_marginTop="16dp"
+            android:text="Feeding :Dry Food (1 time)\nWet Food(1 time)\nVeterinary Prescription diet(2 times) \nRaw Food(1 time) \nWeekend Special Food"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.926"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vacationcost" />
+
+        <TextView
+            android:id="@+id/vacationexercise"
+            android:layout_width="275dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="12dp"
+            android:text="Exercise :Morning, Evening"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.928"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vacationfood" />
+
+        <Button
+            android:id="@+id/buyweekend"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/skyblue"
+            android:onClick="GoToMakePayments"
+            android:text="Buy Now"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.597"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vacationexercise" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            tools:ignore="MissingConstraints">
+            <ImageButton
+                android:id="@+id/adoreme_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/round_arrow_back_24"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="19dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
